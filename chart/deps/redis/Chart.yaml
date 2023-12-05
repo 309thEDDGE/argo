@@ -1,0 +1,34 @@
+annotations:
+  bigbang.dev/applicationVersions: |
+    - Redis: 7.2.1
+  category: Database
+  helm.sh/images: |
+    - name: redis
+      image: registry1.dso.mil/ironbank/bitnami/redis:7.2.1
+    - name: exporter
+      image: registry1.dso.mil/ironbank/bitnami/analytics/redis-exporter:v1.54.0
+  licenses: Apache-2.0
+apiVersion: v2
+appVersion: 7.2.1
+dependencies:
+- name: common
+  repository: oci://registry-1.docker.io/bitnamicharts
+  tags:
+  - bitnami-common
+  version: 2.x.x
+description: Redis(R) is an open source, advanced key-value store. It is often referred
+  to as a data structure server since keys can contain strings, hashes, lists, sets
+  and sorted sets.
+home: https://bitnami.com
+icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+keywords:
+- redis
+- keyvalue
+- database
+maintainers:
+- name: VMware, Inc.
+  url: https://github.com/bitnami/charts
+name: redis
+sources:
+- https://github.com/bitnami/charts/tree/main/bitnami/redis
+version: 18.0.4-bb.0

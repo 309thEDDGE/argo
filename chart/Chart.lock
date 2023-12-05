@@ -1,0 +1,9 @@
+dependencies:
+- name: redis
+  repository: file://./deps/redis
+  version: 18.0.4-bb.0
+- name: argocd-apps
+  repository: file://./deps/argocd-apps
+  version: 0.0.9
+digest: sha256:7757922abd8311dc45dd652020782525f44fcd1c4163ee9a5b18d0fcd1aa2293
+generated: "2023-12-05T08:19:04.067207827-07:00"
